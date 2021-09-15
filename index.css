@@ -8,6 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    color: #000;
 }
 
 @font-face {
@@ -15,14 +16,15 @@ body {
     src: url(2_Fibbage3_Bold_Raleway.woff);
 }
 
+@font-face {
+    font-family: "Magnel";
+    src: url(3_Fibbage3_Magnola_Magnel.woff);
+}
+
 * {
     font-family: "Raleway";
     line-height: 100%;
     box-sizing: border-box;
-}
-
-.wrapper {
-    padding: 20px 0;
 }
 
 .fitted-wrapper {
@@ -74,6 +76,26 @@ body {
     color: #ffc;
     margin: 0 auto;
     border-radius: 0 0 20px 20px;
+}
+
+.history {
+    width: 800px;
+    margin: 40px 0;
+}
+
+.history>.title {
+    font-size: 40px;
+    font-family: "Magnel";
+    padding: 5px 0;
+}
+
+.history>.content {
+    padding: 10px 0;
+}
+
+.history>.content>.entry {
+    font-size: 18px;
+    padding: 10px 0;
 }
 
 @media only screen and (max-width: 1000px) {
