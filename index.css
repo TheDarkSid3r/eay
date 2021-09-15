@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    background-color: #adcb4e;
+    background-image: url(background.png);
+    background-position: center;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url(2_Fibbage3_Bold_Raleway.woff);
+}
+
+* {
+    font-family: "Raleway";
+    line-height: 100%;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    padding: 20px 0;
+}
+
+.fitted-wrapper {
+    padding: 10px;
+}
+
+.answer {
+    padding: 10px 30px;
+    background-color: #fcffd4;
+    border-image: url(answer.png) 17 28 / 14px 28px / 0px repeat;
+    border-style: solid;
+    border-radius: 10px;
+    color: #000;
+    font-size: 18px;
+    max-width: 100%;
+    display: inline-block;
+}
+
+.playername {
+    width: 500px;
+    outline: 0;
+    text-transform: uppercase;
+}
+
+.generate {
+    cursor: pointer;
+    width: 300px;
+}
+
+.prompt {
+    position: relative;
+    padding: 30px;
+    background-image: url(prompt.png);
+    background-size: cover;
+    background-position: center;
+    max-width: 1000px;
+    margin: 40px auto 0;
+    color: #ffc;
+    font-size: 48px;
+    border-radius: 20px 20px 0 0;
+    word-break: break-word;
+}
+
+.prompt-bumper {
+    background-color: #393;
+    padding: 7px 10px;
+    font-size: 18px;
+    max-width: 1000px;
+    color: #ffc;
+    margin: 0 auto;
+    border-radius: 0 0 20px 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .prompt, .prompt-bumper {
+        border-radius: 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .prompt {
+        padding: 20px;
+        font-size: 28px;
+    }
+}
